@@ -1,0 +1,6 @@
+framework module QXMyVip {
+  umbrella header "QXMyVip-umbrella.h"
+
+  export *
+  module * { export * }
+}
