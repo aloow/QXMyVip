@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,11 +18,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="724"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pm5-wY-Z74" userLabel="Container Stack View">
-                    <rect key="frame" x="0.0" y="44" width="414" height="680"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="725"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XF8-Sv-H4g" userLabel="Mid Stack View">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="449.5"/>
@@ -406,7 +407,7 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="lhR-qy-LQP" secondAttribute="trailing" constant="20" id="2qB-vS-YMP"/>
                                                 <constraint firstAttribute="bottom" secondItem="lhR-qy-LQP" secondAttribute="bottom" constant="15" id="GqD-AD-DrV"/>
@@ -419,10 +420,10 @@
                             </subviews>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFc-gg-2qO">
-                            <rect key="frame" x="0.0" y="459.5" width="414" height="220.5"/>
+                            <rect key="frame" x="0.0" y="459.5" width="414" height="215.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zm9-rx-rsj">
-                                    <rect key="frame" x="20" y="20" width="374" height="185.5"/>
+                                    <rect key="frame" x="20" y="20" width="374" height="180.5"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yy6-4l-hcQ">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="10"/>
@@ -454,19 +455,19 @@
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ew1-rN-bJG">
-                                            <rect key="frame" x="0.0" y="32" width="374" height="81.5"/>
+                                            <rect key="frame" x="0.0" y="32" width="374" height="76.5"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U3e-LI-Rfx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="28.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="已邀 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o72-45-XBX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="307.5" height="28.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="307.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还差 7 位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soN-5o-RSX">
-                                                            <rect key="frame" x="315.5" y="0.0" width="58.5" height="28.5"/>
+                                                            <rect key="frame" x="315.5" y="0.0" width="58.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -474,13 +475,13 @@
                                                     </subviews>
                                                 </stackView>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5wK-b0-iDI">
-                                                    <rect key="frame" x="-2" y="38.5" width="378" height="17"/>
+                                                    <rect key="frame" x="-2" y="33.5" width="378" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="ujS-in-aTS"/>
                                                     </constraints>
                                                 </slider>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-CR-iYX">
-                                                    <rect key="frame" x="0.0" y="64.5" width="374" height="17"/>
+                                                    <rect key="frame" x="0.0" y="59.5" width="374" height="17"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="普通用户" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XI2-bc-cKe">
                                                             <rect key="frame" x="0.0" y="0.0" width="323.5" height="17"/>
@@ -498,8 +499,8 @@
                                                 </stackView>
                                             </subviews>
                                         </stackView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VF-rs-o6h">
-                                            <rect key="frame" x="0.0" y="135.5" width="374" height="50"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VF-rs-o6h">
+                                            <rect key="frame" x="0.0" y="130.5" width="374" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="KFY-ZH-5bi"/>
                                             </constraints>
@@ -514,7 +515,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="Zm9-rx-rsj" firstAttribute="top" secondItem="QFc-gg-2qO" secondAttribute="top" constant="20" id="7bl-n1-XhE"/>
                                 <constraint firstAttribute="trailing" secondItem="Zm9-rx-rsj" secondAttribute="trailing" constant="20" id="9Pl-w3-jMr"/>
@@ -522,10 +523,29 @@
                                 <constraint firstItem="Zm9-rx-rsj" firstAttribute="leading" secondItem="QFc-gg-2qO" secondAttribute="leading" constant="20" id="v8a-6B-mjm"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-1R-lcH">
+                            <rect key="frame" x="0.0" y="685" width="414" height="40"/>
+                            <color key="backgroundColor" red="0.94347560409999998" green="0.61847656969999998" blue="0.2335387766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="upL-LD-t4u"/>
+                            </constraints>
+                            <state key="normal" title="跳转到个人中心">
+                                <color key="titleColor" red="0.96079069380000004" green="0.96077269320000003" blue="0.96078497169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toMeControllerTap:" destination="-1" eventType="touchUpInside" id="Avo-VS-caq"/>
+                            </connections>
+                        </button>
                     </subviews>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Pm5-wY-Z74" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="1Kj-9H-yxW"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Pm5-wY-Z74" secondAttribute="bottom" id="QNS-zo-5Ry"/>
@@ -533,8 +553,7 @@
                 <constraint firstItem="Pm5-wY-Z74" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="lXK-nF-oCW"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="147.82608695652175" y="127.90178571428571"/>
+            <point key="canvasLocation" x="147.82608695652175" y="142.96875"/>
         </view>
         <tapGestureRecognizer id="hN5-3m-ieS" userLabel="swichToSvip">
             <connections>
@@ -563,5 +582,11 @@
         <image name="vip_right" width="5" height="8"/>
         <image name="vip_top_decorate_l" width="75" height="9"/>
         <image name="vip_top_decorate_r" width="75.5" height="9"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

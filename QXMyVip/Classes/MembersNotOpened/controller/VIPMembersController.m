@@ -12,6 +12,7 @@
 #import "MembershipInterestsAlterView.h"
 #import "LEEAlert.h"
 #import "InvitationPosterController.h"
+#import <MGJRouter/MGJRouter.h>
 
 @interface VIPMembersController ()
 
@@ -53,5 +54,12 @@
     
 }
 
+// 到个人中心
+- (IBAction)toMeControllerTap:(id)sender {
+    
+    UIViewController *targetController = [MGJRouter objectForURL:@"QXMe://Me/Gethome"];
+    [self presentViewController:targetController animated:true completion:nil];
+    
+}
 
 @end
